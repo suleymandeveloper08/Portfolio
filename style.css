@@ -27,7 +27,7 @@ body {
     position: relative;
 }
 
-/* Ýumşak background öwüşgini (Uly dizaýnerleriň ulanýan emeli yşygy) */
+/* Ýumşak background öwüşgini */
 .ambient-bg {
     position: fixed;
     top: -10%;
@@ -291,11 +291,11 @@ body {
     color: var(--text-secondary);
 }
 
-/* --- PROJECTS GRID (PREMIUM LOOK) --- */
+/* --- PROJECTS GRID --- */
 .projects-section { padding: 80px 0; }
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     gap: 24px;
 }
 
@@ -395,7 +395,7 @@ body {
     line-height: 1.6;
 }
 
-/* --- CONTACT BOX --- */
+/* --- CONTACT & PREMIUM SOCIAL FOOTER --- */
 .contact-section { padding: 100px 0 140px 0; }
 .contact-box {
     background: var(--bg-surface);
@@ -420,33 +420,69 @@ body {
     line-height: 1.6;
 }
 
-.email-link {
+/* Gmail Düwmesiniň sazlanan täze stili */
+.email-btn {
     font-family: var(--font-mono);
-    font-size: 24px;
-    color: var(--accent-cyan);
+    font-size: 16px;
+    color: var(--bg-main);
+    background: var(--accent-cyan);
     text-decoration: none;
-    font-weight: 500;
-    transition: opacity 0.2s;
+    font-weight: 600;
+    padding: 14px 28px;
+    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.25s ease;
+    box-shadow: 0 4px 20px rgba(79, 251, 223, 0.15);
 }
 
-.email-link:hover { opacity: 0.8; }
+.email-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(79, 251, 223, 0.3);
+    opacity: 0.95;
+}
 
+/* Ýokary hilli Premium Logo elementleri */
 .social-footer {
-    margin-top: 40px;
+    margin-top: 50px;
     display: flex;
     justify-content: center;
-    gap: 30px;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-.social-footer a {
+.social-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     color: var(--text-secondary);
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--border-color);
+    padding: 10px 20px;
+    border-radius: 30px;
     text-decoration: none;
     font-size: 14px;
     font-family: var(--font-mono);
-    transition: color 0.2s;
+    transition: all 0.25s ease;
 }
 
-.social-footer a:hover { color: var(--text-primary); }
+.social-item i {
+    font-size: 16px;
+    transition: transform 0.2s;
+}
+
+/* Her logonyň öz reňki we effekti */
+.social-item:hover {
+    color: var(--text-primary);
+    border-color: var(--accent-cyan);
+    background: rgba(79, 251, 223, 0.03);
+    transform: translateY(-3px);
+}
+
+.social-item:hover i {
+    transform: scale(1.15);
+}
 
 /* --- FOOTER --- */
 .footer-note {
@@ -462,12 +498,47 @@ body {
     50% { opacity: 0; }
 }
 
-/* --- RESPONSIVE WORK (Mobil goldawy) --- */
+/* --- FULL RESPONSIVE ADVANCED WORK (Doly Mobil Goldawy) --- */
+@media (max-width: 992px) {
+    .hero-title { font-size: 44px; }
+    .hero-grid { gap: 40px; }
+}
+
 @media (max-width: 768px) {
-    .header-container { padding: 15px; }
-    .nav-links, .hire-me-btn { display: none; }
-    .hero-grid, .about-grid, .exp-item { grid-template-columns: 1fr; gap: 30px; }
-    .hero-title { font-size: 38px; }
-    .contact-box { padding: 30px 20px; }
-    .email-link { font-size: 18px; }
+    .header-container { padding: 15px 20px; }
+    
+    /* Mobil nawigasiýa (Doly gizlemän, owadan görnüşe saldyk) */
+    .nav-links {
+        display: flex;
+        gap: 15px;
+    }
+    .nav-links a {
+        margin-right: 0;
+        font-size: 12px;
+    }
+    .hire-me-btn { display: none; } /* Mobile dizaýnda danyşyk düwmesi tygşytlandy */
+    
+    .hero-grid, .about-grid, .exp-item { 
+        grid-template-columns: 1fr; 
+        gap: 35px; 
+    }
+    
+    .hero-section { padding: 130px 0 60px 0; }
+    .hero-title { font-size: 36px; }
+    .hero-paragraph { font-size: 16px; }
+    
+    .contact-box { padding: 40px 20px; }
+    .contact-box h2 { font-size: 30px; }
+    .email-btn { font-size: 14px; padding: 12px 20px; width: 100%; justify-content: center; }
+    
+    .social-footer { gap: 12px; }
+    .social-item { width: calc(50% - 6px); justify-content: center; padding: 12px; }
+}
+
+@media (max-width: 480px) {
+    .nav-links { display: none; } /* Örän kiçi ekranlarda nawigasiýany ýapdyk */
+    .hero-actions { flex-direction: column; gap: 12px; }
+    .btn-filled, .btn-outlined { text-align: center; }
+    .social-item { width: 100%; } /* Gysga telefonlarda logolar arkaýyn aşakma-aşak düşer */
+    .section-heading { font-size: 26px; }
 }
