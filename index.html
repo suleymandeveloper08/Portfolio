@@ -3,272 +3,339 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suleyman Nurmuhammedov | Full-Stack Developer</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Professional and clean fonts -->
+    <title>Suleyman Nurmuhammedov — Web and mobile developer</title>
+    <meta name="description" content="Suleyman Nurmuhammedov builds web apps with Django and mobile apps with React Native. Available for freelance work.">
+    <meta name="theme-color" content="#f5f4ef">
+    <meta property="og:title" content="Suleyman Nurmuhammedov">
+    <meta property="og:description" content="Web and mobile developer. Django, React Native, and AI integrations.">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%23101114'/%3E%3Ccircle cx='23' cy='9' r='4' fill='%23ff5a1f'/%3E%3Ctext x='13' y='23' font-size='17' font-weight='800' text-anchor='middle' font-family='Arial,sans-serif' fill='%23ffffff'%3ES%3C/text%3E%3C/svg%3E">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome Logolar üçin CDN (Täze goşuldy) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Soft Grid and Glow Effect -->
-    <div class="ambient-bg"></div>
+    <div class="progress" aria-hidden="true"></div>
 
-    <!-- Navigation Panel -->
-    <header class="main-header">
-        <div class="header-container">
-            <a href="#home" class="developer-brand">suleyman.dev<span class="blink">_</span></a>
-            <nav class="nav-links">
-                <a href="#about">// about</a>
-                <a href="#projects">// projects</a>
-                <a href="#experience">// experience</a>
-                <a href="#contact">// contact</a>
-            </nav>
-            <a href="mailto:suleymannurmuhammedov2008@gmail.com" class="hire-me-btn">Start conversation</a>
-        </div>
+    <header class="nav" id="nav">
+        <a href="#top" class="brand"><span class="brand-mark">S</span><span class="brand-name">Suleyman N.</span></a>
+        <nav class="nav-links" aria-label="Main">
+            <a href="#work">Work</a>
+            <a href="#skills">Skills</a>
+            <a href="#awards">Awards</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <a href="mailto:suleymannurmuhammedov2008@gmail.com" class="nav-cta">Let's talk</a>
     </header>
 
-    <main class="portfolio-container">
-        
-        <!-- HERO SECTION (Introduction) -->
-        <section id="home" class="hero-section">
-            <div class="hero-grid">
-                <div class="hero-info">
-                    <div class="tech-badge">⚡ Full-Stack Developer & Robotics Enthusiast</div>
-                    <h1 class="hero-title">Where Architecture and <span class="text-gradient">User Interface</span> Meet.</h1>
-                    <p class="hero-paragraph">
-                        I build robust Django backend systems and high-performance mobile applications using React Native (Expo). Transforming complex algorithms into clean and premium design is my core focus.
-                    </p>
-                    <div class="hero-actions">
-                        <a href="#projects" class="btn-filled">View Projects</a>
-                        <a href="#contact" class="btn-outlined">Get in Touch</a>
+    <div class="hero-wrap" id="top">
+
+        <!-- Hero -->
+        <section class="hero">
+            <div class="hero-copy">
+                <p class="status"><span class="dot" aria-hidden="true"></span>Available for freelance work</p>
+                <h1>Web and mobile apps, <span class="accent">built end to end.</span></h1>
+                <p class="lead">
+                    I'm Suleyman, a full-stack developer. I build Django backends and React Native
+                    apps, and most of my projects connect to an AI API. I also compete in robotics.
+                </p>
+                <div class="actions">
+                    <a href="#work" class="btn btn-dark">See my work <span class="arrow">&rarr;</span></a>
+                    <a href="mailto:suleymannurmuhammedov2008@gmail.com" class="btn btn-line">Email me</a>
+                </div>
+            </div>
+
+            <aside class="hero-card" aria-label="Profile summary">
+                <div class="hc-top">
+                    <span class="hc-avatar">S</span>
+                    <div>
+                        <p class="hc-name">Suleyman Nurmuhammedov</p>
+                        <p class="hc-role">Full-stack developer</p>
                     </div>
                 </div>
-                <div class="hero-stats-card">
-                    <div class="console-header">
-                        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
-                        <span class="console-title">system_status.sh</span>
+                <dl class="hc-rows">
+                    <div><dt>Backend</dt><dd>Python, Django</dd></div>
+                    <div><dt>Mobile</dt><dd>React Native, Expo</dd></div>
+                    <div><dt>AI</dt><dd>Google Gemini API</dd></div>
+                    <div><dt>Also</dt><dd>Robotics</dd></div>
+                </dl>
+            </aside>
+        </section>
+
+        <!-- Numbers -->
+        <section class="stats" aria-label="In numbers">
+            <div class="stat"><strong><span class="count" data-to="5">5</span></strong><span>Projects built</span></div>
+            <div class="stat"><strong><span class="count" data-to="4">4</span></strong><span>Awards and certificates</span></div>
+            <div class="stat"><strong><span class="count" data-to="6">6</span></strong><span>Languages spoken</span></div>
+            <div class="stat"><strong><span class="count" data-to="1" data-suffix="st">1st</span></strong><span>Place, Mary city competition</span></div>
+        </section>
+
+    </div>
+
+    <!-- Tech strip -->
+    <div class="marquee" aria-label="Technologies I use">
+        <div class="track">
+            <ul>
+                <li>Python</li><li>Django</li><li>REST APIs</li><li>MySQL</li><li>Supabase</li><li>React Native</li><li>Expo</li><li>JavaScript</li><li>HTML5</li><li>CSS3</li><li>Gemini API</li><li>Git</li><li>Vercel</li><li>Robotics</li>
+            </ul>
+            <ul aria-hidden="true">
+                <li>Python</li><li>Django</li><li>REST APIs</li><li>MySQL</li><li>Supabase</li><li>React Native</li><li>Expo</li><li>JavaScript</li><li>HTML5</li><li>CSS3</li><li>Gemini API</li><li>Git</li><li>Vercel</li><li>Robotics</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-wrap">
+
+        <!-- Projects -->
+        <section class="section" id="work">
+            <header class="section-head">
+                <p class="eyebrow">Selected work</p>
+                <h2>Things I've built</h2>
+            </header>
+
+            <div class="grid">
+
+                <!-- AgroAI -->
+                <article class="card wide" style="--tint:#dfe9d6; --tint-d:#c7d9b8;">
+                    <div class="shot">
+                        <div class="browser">
+                            <div class="bar"><i></i><i></i><i></i></div>
+                            <div class="page two">
+                                <div class="img leaf"></div>
+                                <div class="col">
+                                    <i class="l d w70"></i>
+                                    <i class="l w90"></i>
+                                    <i class="l w50"></i>
+                                    <i class="chip"></i>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="console-body">
-                        <p class="c-line"><span class="c-keyword">const</span> developer = {</p>
-                        <p class="c-line pad-1">name: <span class="c-string">"Suleyman Nurmuhammedov"</span>,</p>
-                        <p class="c-line pad-1">focus: <span class="c-string">"Web & Mobile Applications"</span>,</p>
-                        <p class="c-line pad-1">languages: [<span class="c-string">"Turkmen (Native)"</span>, <span class="c-string">"English (Proficient)"</span>, <span class="c-string">"German (Elementary)"</span>, <span class="c-string">"Turkish (Fluent)"</span>, <span class="c-string">"Russian (Elementary)"</span>, <span class="c-string">"Italian (Basic)"</span>]],</p>
-                        <p class="c-line pad-1">status: <span class="c-string">"Open for international projects"</span></p>
-                        <p class="c-line">};</p>
+                    <div class="card-body">
+                        <p class="card-meta"><span>Web app</span><span>2026</span></p>
+                        <h3>AgroAI</h3>
+                        <p>
+                            A Django site for greenhouse growers. You upload a photo of a plant, and
+                            the Gemini API looks at it and tells you whether the plant is healthy or
+                            what disease it might have.
+                        </p>
+                        <ul class="tags"><li>Django</li><li>Python</li><li>Gemini API</li></ul>
                     </div>
-                </div>
+                </article>
+
+                <!-- Plant AI -->
+                <article class="card" style="--tint:#f3e2cf; --tint-d:#e8cfb0;">
+                    <div class="shot">
+                        <div class="phone">
+                            <div class="screen">
+                                <div class="img leaf round"></div>
+                                <i class="l d w70"></i>
+                                <i class="l w50"></i>
+                                <i class="btn-s"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-meta"><span>Mobile app</span><span>2026</span></p>
+                        <h3>Plant AI</h3>
+                        <p>
+                            A phone app built with React Native and Expo. Point it at a plant and it
+                            names the species and points out health problems.
+                        </p>
+                        <ul class="tags"><li>React Native</li><li>Expo</li><li>AI</li></ul>
+                    </div>
+                </article>
+
+                <!-- Pathfinder -->
+                <article class="card" style="--tint:#dcd9f2; --tint-d:#c4bfea;">
+                    <div class="shot">
+                        <div class="phone">
+                            <div class="screen quiz">
+                                <i class="l d w70"></i>
+                                <div class="opt"><b></b><i class="l w70"></i></div>
+                                <div class="opt on"><b></b><i class="l w50"></i></div>
+                                <div class="opt"><b></b><i class="l w60"></i></div>
+                                <i class="btn-s"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-meta"><span>Mobile app</span><span>2026</span></p>
+                        <h3>Pathfinder</h3>
+                        <p>
+                            For students who aren't sure what to study. It has personality and
+                            aptitude quizzes, and a chat with an AI mentor (Gemini) you can ask
+                            about your options.
+                        </p>
+                        <ul class="tags"><li>React Native</li><li>Expo</li><li>Gemini API</li></ul>
+                    </div>
+                </article>
+
+                <!-- CodeLab -->
+                <article class="card" style="--tint:#d6e8f2; --tint-d:#bcd8e8;">
+                    <div class="shot">
+                        <div class="browser">
+                            <div class="bar"><i></i><i></i><i></i></div>
+                            <div class="page code">
+                                <i class="l c1 w40"></i>
+                                <i class="l c3 w70 in1"></i>
+                                <i class="l c2 w50 in1"></i>
+                                <i class="l c4 w60 in2"></i>
+                                <i class="l c1 w30"></i>
+                                <i class="l c3 w50 in1"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-meta"><span>Web app</span><span>2025</span></p>
+                        <h3>CodeLab</h3>
+                        <p>
+                            A learning platform for people studying programming. It has a code editor
+                            in the browser, exercises checked by automated tests, and a dark theme
+                            that's easy on the eyes.
+                        </p>
+                        <ul class="tags"><li>Full-stack</li><li>Code editor</li><li>Automated tests</li></ul>
+                    </div>
+                </article>
+
+                <!-- Bio AI -->
+                <article class="card" style="--tint:#f4d9d3; --tint-d:#ebbfb6;">
+                    <div class="shot">
+                        <div class="browser">
+                            <div class="bar"><i></i><i></i><i></i></div>
+                            <div class="page chat">
+                                <div class="bub me"><i class="l w90"></i><i class="l w60"></i></div>
+                                <div class="bub ai"><i class="l w90"></i><i class="l w90"></i><i class="l w50"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-meta"><span>Web app</span><span>2025</span></p>
+                        <h3>Bio AI</h3>
+                        <p>
+                            A chat site for questions about biology, genetics and science in general.
+                            The backend is Django, the frontend is plain HTML, CSS and JavaScript, and
+                            the answers come from the Gemini API.
+                        </p>
+                        <ul class="tags"><li>Django</li><li>Python</li><li>Gemini API</li></ul>
+                    </div>
+                </article>
+
             </div>
         </section>
 
-        <!-- ABOUT & TECH STACK SECTION (Skills) -->
-        <section id="about" class="about-section">
-            <div class="section-title-wrapper">
-                <span class="section-tag">01. SKILLS</span>
-                <h2 class="section-heading">Tech Stack</h2>
+    </div>
+
+    <!-- Skills (dark band) -->
+    <section class="band" id="skills">
+        <div class="band-inner">
+            <header class="section-head light">
+                <p class="eyebrow">Skills</p>
+                <h2>What I work with</h2>
+            </header>
+
+            <div class="skill-grid">
+                <div class="skill">
+                    <h3>Backend</h3>
+                    <ul class="chips"><li>Python</li><li>Django</li><li>REST APIs</li><li>MySQL</li><li>Supabase</li></ul>
+                </div>
+                <div class="skill">
+                    <h3>Mobile</h3>
+                    <ul class="chips"><li>React Native</li><li>Expo</li></ul>
+                </div>
+                <div class="skill">
+                    <h3>Frontend</h3>
+                    <ul class="chips"><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>Responsive design</li></ul>
+                </div>
+                <div class="skill">
+                    <h3>Other</h3>
+                    <ul class="chips"><li>Git and GitHub</li><li>Vercel</li><li>Gemini API</li><li>Robotics</li></ul>
+                </div>
             </div>
-            <div class="about-grid">
-                <div class="about-text-content">
-                    <p>I have extensive experience building strong, scalable backend architectures, working efficiently with relational databases, and implementing advanced AI API integrations (such as the Google Gemini API).</p>
-                </div>
-                <div class="stack-categories">
-                    <div class="stack-box">
-                        <h3>Backend & Core</h3>
-                        <p>Python, Django, REST APIs, Supabase, MySQL</p>
+
+            <div class="langs">
+                <h3>Languages</h3>
+                <ul>
+                    <li><b>Turkmen</b> Native</li>
+                    <li><b>Turkish</b> Fluent</li>
+                    <li><b>English</b> Proficient</li>
+                    <li><b>German</b> Elementary</li>
+                    <li><b>Russian</b> Elementary</li>
+                    <li><b>Italian</b> Basic</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <div class="main-wrap">
+
+        <!-- Awards -->
+        <section class="section" id="awards">
+            <header class="section-head">
+                <p class="eyebrow">Recognition</p>
+                <h2>Competitions and certificates</h2>
+            </header>
+
+            <ul class="awards">
+                <li class="award top">
+                    <span class="year">2026</span>
+                    <div>
+                        <h3>Project Innovation Competition</h3>
+                        <p>1st place in Mary city, 4th place in Mary province.</p>
                     </div>
-                    <div class="stack-box">
-                        <h3>Mobile & Frontend</h3>
-                        <p>React Native, Expo, JavaScript, HTML5, CSS3 (Glassmorphism), Responsive Web Design</p>
+                    <span class="badge">1st place</span>
+                </li>
+                <li class="award">
+                    <span class="year">2026</span>
+                    <div>
+                        <h3>Rowshen Gelejek Education Center</h3>
+                        <p>Certificate, regional robotics championship.</p>
                     </div>
-                    <div class="stack-box">
-                        <h3>Tools & Others</h3>
-                        <p>Git/GitHub, Vercel Deployment, Robotics, AI Engineering</p>
+                    <span class="badge">Certificate</span>
+                </li>
+                <li class="award">
+                    <span class="year">Nov 2025</span>
+                    <div>
+                        <h3>International Oil &amp; Gas University (IOGU)</h3>
+                        <p>Certificate, university robotics competition.</p>
                     </div>
-                </div>
+                    <span class="badge">Certificate</span>
+                </li>
+                <li class="award">
+                    <span class="year">Nov 2025</span>
+                    <div>
+                        <h3>Google Developer Groups (GDG)</h3>
+                        <p>Certificate, StartUp Showcase.</p>
+                    </div>
+                    <span class="badge">Certificate</span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Contact -->
+        <section class="section last" id="contact">
+            <div class="cta-block">
+                <p class="eyebrow">Contact</p>
+                <h2>Have a website or an app in mind?</h2>
+                <p class="cta-text">Write to me. Email is the fastest way to reach me.</p>
+                <a class="mail" href="mailto:suleymannurmuhammedov2008@gmail.com">suleymannurmuhammedov2008@gmail.com</a>
+                <ul class="social">
+                    <li><a href="https://github.com/suleymandeveloper08" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                    <li><a href="https://t.me/suleyman_developer" target="_blank" rel="noopener noreferrer">Telegram</a></li>
+                    <li><a href="https://www.upwork.com/freelancers/~015c786ef140eb8971" target="_blank" rel="noopener noreferrer">Upwork</a></li>
+                    <li><a href="https://www.instagram.com/n_suleyman_n" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                </ul>
             </div>
         </section>
 
-        <!-- PROJECTS SECTION (Real and Powerful Projects) -->
-        <section id="projects" class="projects-section">
-            <div class="section-title-wrapper">
-                <span class="section-tag">02. PORTFOLIO</span>
-                <h2 class="section-heading">Featured Projects</h2>
-            </div>
-            <!-- Ýalňyş ýapylan div-ler düzedildi, ähli taslamalar şu gridiň içine salyndy -->
-            <div class="projects-grid">
-                
-                <!-- Project 1: AgroAI -->
-                <div class="project-card">
-                    <div class="project-meta">
-                        <span class="proj-type">Agricultural Web App</span>
-                        <span class="proj-year">2026</span>
-                    </div>
-                    <h3 class="project-title">AgroAI</h3>
-                    <p class="project-description">
-                        A specialized Django platform designed for modern greenhouses. It utilizes the Google Gemini API to analyze plant imagery, accurately diagnosing plant health conditions and identifying diseases.
-                    </p>
-                    <div class="project-tech-tags">
-                        <span>Django</span><span>Python</span><span>Gemini API</span><span>Image Recognition</span>
-                    </div>
-                </div>
+    </div>
 
-                <!-- Project 2: CodeLab -->
-                <div class="project-card">
-                    <div class="project-meta">
-                        <span class="proj-type">Educational Web App</span>
-                        <span class="proj-year">2025</span>
-                    </div>
-                    <h3 class="project-title">CodeLab</h3>
-                    <p class="project-description">
-                        A professional educational ecosystem developed for programming enthusiasts. It seamlessly integrates interactive code editors, automated testing workflows, and a premium dark mode design aesthetic.
-                    </p>
-                    <div class="project-tech-tags">
-                        <span>Full-Stack</span><span>Code Editor</span><span>LMS Platform</span><span>UI/UX</span>
-                    </div>
-                </div>
-
-                <!-- Project 3: Plant AI -->
-                <div class="project-card">
-                    <div class="project-meta">
-                        <span class="proj-type">Mobile Marketplace</span>
-                        <span class="proj-year">2026</span>
-                    </div>
-                    <h3 class="project-title">Plant AI</h3>
-                    <p class="project-description">
-                        A cross-platform mobile application built with **React Native** and **Expo** that leverages Artificial Intelligence to identify plant species and diagnose plant health issues in real-time.
-                    </p>
-                    <div class="project-tech-tags">
-                        <span>React Native</span><span>Expo</span><span>AI Search</span><span>Mobile UI</span>
-                    </div>
-                </div>
-
-                <!-- Project 4: Bio AI -->
-                <div class="project-card">
-                    <div class="project-meta">
-                        <span class="proj-type">Education Chat App</span>
-                        <span class="proj-year">2025</span>
-                    </div>
-                    <h3 class="project-title">Bio AI</h3>
-                    <p class="project-description">
-                        BioAI is a minimalist, web-based conversational platform designed to answer complex biological, genetic, and scientific queries. Built using a robust Django backend and a clean, responsive HTML/CSS/JS frontend, the application integrates the Google Gemini API to deliver instant, intelligent, and context-aware responses.
-                    </p>
-                    <div class="project-tech-tags">
-                        <span>Django</span><span>Gemini API</span><span>Python</span><span>Web UI</span>
-                    </div>
-                </div>
-
-                <!-- Project 5: PathFinder App -->
-                <div class="project-card">
-                    <div class="project-meta">
-                        <span class="proj-type">Education App</span>
-                        <span class="proj-year">2026</span>
-                    </div>
-                    <h3 class="project-title">Pathfinder App</h3>
-                    <p class="project-description">
-                        Meet Pathfinder, the ultimate compass for students looking to navigate their future with confidence. Take smart personality and aptitude quizzes to uncover your strengths, interests, and chat 24/7 with an advanced AI mentor powered by Google Gemini.
-                    </p>
-                    <div class="project-tech-tags">
-                        <span>React Native</span><span>Expo</span><span>AI Mentor</span><span>Mobile UI</span>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- EXPERIENCE & RECOGNITION SECTION -->
-        <section id="experience" class="experience-section">
-            <div class="section-title-wrapper">
-                <span class="section-tag">03. EXPERIENCE & ACHIEVEMENTS</span>
-                <h2 class="section-heading">Certificates & Awards</h2>
-            </div>
-            <div class="experience-list">
-                
-                <div class="exp-item">
-                    <div class="exp-left-side">
-                        <span class="exp-date">2026</span>
-                        <h4>Project Innovation Competition</h4>
-                    </div>
-                    <div class="exp-right-side">
-                        <h5>1st Place (Mary City) & 4th Place (Mary Province)</h5>
-                        <p>Secured top ranks at both city and regional stages in the design and innovation competition with advanced project presentations.</p>
-                    </div>
-                </div>
-
-                <div class="exp-item">
-                    <div class="exp-left-side">
-                        <span class="exp-date">Nov 2025</span>
-                        <h4>International Oil & Gas University (IOGU)</h4>
-                    </div>
-                    <div class="exp-right-side">
-                        <h5>Robotics Competition — Certificate</h5>
-                        <p>Awarded an official certificate of achievement for demonstrating advanced engineering and autonomous programming skills in the university-level robotics tournament.</p>
-                    </div>
-                </div>
-
-                <div class="exp-item">
-                    <div class="exp-left-side">
-                        <span class="exp-date">Nov 2025</span>
-                        <h4>Google Developer Groups (GDG)</h4>
-                    </div>
-                    <div class="exp-right-side">
-                        <h5>StartUp Showcase — Certificate</h5>
-                        <p>Recognized for presenting innovative technical concepts and software startup solutions within the GDG community showcase.</p>
-                    </div>
-                </div>
-
-                <div class="exp-item">
-                    <div class="exp-left-side">
-                        <span class="exp-date">2026</span>
-                        <h4>Rowshen Gelejek Education Center</h4>
-                    </div>
-                    <div class="exp-right-side">
-                        <h5>Robotics Championship — Certificate</h5>
-                        <p>Successfully competed and earned a certificate of distinction in the competitive regional robotics tournament.</p>
-                    </div>
-                </div>
-                
-            </div>
-        </section>
-
-        <!-- CONTACT SECTION -->
-        <section id="contact" class="contact-section">
-            <div class="contact-box">
-                <span class="section-tag">// Connected Ecosystems</span>
-                <h2>Let's build something extraordinary together.</h2>
-                <p>Whether you are looking to deploy high-performance web applications, fluid cross-platform mobile environments, or seamless AI integrations, my inbox is always open for innovative ideas.</p>
-                
-                <div class="contact-methods">
-                    <!-- Gmail Düwmesi (Dizaýny premium edildi we içindäki hat gysgaldyldy) -->
-                    <a href="mailto:suleymannurmuhammedov2008@gmail.com" class="email-btn">
-                        <i class="fa-regular fa-envelope"></i> suleymannurmuhammedov2008@gmail.com
-                    </a>
-                    
-                    <!-- Logolar we professional dizaýnly links -->
-                    <div class="social-footer">
-                        <a href="https://github.com/suleymandeveloper08" target="_blank" rel="noopener noreferrer" class="social-item">
-                            <i class="fab fa-github"></i> <span>GitHub</span>
-                        </a>
-                        <a href="https://t.me/suleyman_developer" target="_blank" rel="noopener noreferrer" class="social-item">
-                            <i class="fab fa-telegram"></i> <span>Telegram</span>
-                        </a>
-                        <a href="https://www.instagram.com/n_suleyman_n" target="_blank" rel="noopener noreferrer" class="social-item">
-                            <i class="fab fa-instagram"></i> <span>Instagram</span>
-                        </a>
-                        <a href="https://www.upwork.com/freelancers/~015c786ef140eb8971" target="_blank" rel="noopener noreferrer" class="social-item">
-                            <i class="fa-solid fa-briefcase"></i> <span>Upwork</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <footer class="footer-note">
-        <p>© 2026 Suleyman Nurmuhammedov</p>
+    <footer class="footer">
+        <p>&copy; <span id="year">2026</span> Suleyman Nurmuhammedov</p>
+        <a href="#top">Back to top &uarr;</a>
     </footer>
 
     <script src="script.js"></script>
