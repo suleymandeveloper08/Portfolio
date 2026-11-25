@@ -1086,6 +1086,20 @@ ul {
     transform: translate(2px, -2px);
 }
 
+.btn-light {
+    background: #fff;
+    color: var(--ink);
+}
+
+.btn-light:hover {
+    background: var(--dark);
+    color: #fff;
+}
+
+.cta-block .social {
+    margin-top: 32px;
+}
+
 /* Footer */
 
 .footer {
